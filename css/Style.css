@@ -1,6 +1,7 @@
 body {color: #0065FC;
  font-family: 'Raleway';
-background-color: #F2F2F2;}
+/*background-color: #F2F2F2;*/
+ }
 head {color: #0065FC;}
 .flessibile {
     display: flex;
@@ -49,6 +50,8 @@ overflow-x: auto;
 .caption {
   display: block;
 }
+
+.sezione { background-color: #F2F2F2 };
 
  /* unvisited link */
 .scheda > a:link {
