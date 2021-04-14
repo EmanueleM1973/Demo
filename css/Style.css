@@ -8,7 +8,6 @@ head {color: #0065FC;}
   }
   .flessibile > div {
     margin: 10px;
-    padding: 20px;
     font-size: 16pt;
   }
  .logo{float: left; 
@@ -16,6 +15,21 @@ width: 20%;
 }
  .menu{float:right;
   width: 70%;
+}
+
+.filtri > div {
+
+  border: 3px solid #F2F2F2;
+  border-radius: 25%;
+  padding-right: 5px;
+
+}
+
+.filtri > div > a { margin-left: 15 px;}
+
+.filtri > div > i { background-color: RGBA(0,101,252,0.5);
+border-radius: 25%;
+padding: 10px;
 }
 
 .intestazione{ justify-content: space-between;}
@@ -51,7 +65,14 @@ overflow-x: auto;
   display: block;
 }
 
-.sezione { background-color: #F2F2F2 };
+.sezione { 
+  padding: 5%;
+  background-color: #F2F2F2;
+  border-radius: 25px; }
+
+.spazio {height: 25px;
+  background-color: #FFFFFF ;
+}
 
  /* unvisited link */
 .scheda > a:link {
