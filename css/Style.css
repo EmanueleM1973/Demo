@@ -40,6 +40,12 @@ overflow-x: auto;
 
 }
 
+.iconaRicerca {
+  background-color: #808080;
+  border-radius: 25%;
+  padding: 10px;}
+
+
 .scheda{
   flex: 0 0 auto;
   width:300px;
