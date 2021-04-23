@@ -1,100 +1,159 @@
 <!DOCTYPE html>
 <html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mockup</title>
 <link rel="stylesheet" href="css\Style.css">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 <script src="https://kit.fontawesome.com/e21a1b3c73.js" crossorigin="anonymous"></script>
-<head>
-  <div>
-    <header>
-      <div class="flessibile intestazione">
-        <div class="flessibile logo">
-           <div class=""> <img src="images\Reservia.svg"> </div>
-        </div>
-        <div class="flessibile">
-            <div class="menu"><a href='#intestazioneACC' data-item='Accomodations'>Accomodations</a></div>
-            <div class="menu"><a href='#intestazioneACT' data-item='Activities'>Activities</a></div>
-        </div>
-    </div>
-    </header>
-  </div> 
-</head>
-<body>
+
+<div class="container">
+  <nav>
+    <img src="images\Reservia.svg" alt="Logo Reservia">
+
+    <ul>
+      <li class="accommodations-btn"> <a href="#intestazioneACC">Accommodations</a> </li>
+      <li class="activities-btn"> <a href="#intestazioneACT">Activities</a> </li>
+    </ul>
+  </nav>
+
+<header>
+  <!-- Inizio Search -->
   <div class="ricerca">
     <form>
-      <label for="gsearch">
-        <i class="fas fa-map-pin iconaRicerca"></i>
-      </label>
-      <input type="search" id="gsearch" name="gsearch">
-      <input type="submit" value="Cerca">
+      <i class="fas fa-map-pin iconaRicerca"></i>
+      <input type="search" id="gsearch" name="gsearch" placeholder="Milan,Italy">
+      <input type="submit" value="Search">
+      <i class="fas fa-search"></i>
     </form>
   </div>
-  <div class="filtri flessibile">
-    <div> 
-      <i class="fas fa-bus"></i>
-      <a href='#intestazioneACC' data-item='Accomodations'>Trasporti</a>
-    </div>
-    <div> 
-      <i class="fas fa-university"></i>
-      <a href='#intestazioneACC' data-item='Accomodations'>Cultura</a>
-    </div>
-    <div> 
-      <i class="fas fa-dragon"></i>
-      <a href='#intestazioneACC' data-item='Accomodations'>Fantasy</a>
-    </div>
-  </div>
+
+  <!--Fine search -->
+
+  <!-- Inizio filtri -->
+
+  			<!--filtre bar-->
+        <div class="filter-bar">
+          <h3>Filters</h3>
+          <div class="btns-filters">
+            <button class="btn-filter">
+              <i class="fas fa-bus fa-1x" aria-hidden="true"></i>
+              <span>Transport</span>
+            </button>
+  
+            <button class="btn-filter">
+              <i class="fas fa-university"></i>
+              <span>Culture</span>
+            </button>
+  
+            <button class="btn-filter">
+              <i class="fas fa-dragon"></i>
+              <span>Fantasy</span>
+            </button>
+  
+          </div>
+        </div>
+</header>
 <!-- Inizio con le card delle activities e delle accomodations -->
-  <div class="sezione">
-    <div>
-      <a href="#" id="intestazioneACC">Accomodations</a>
+
+<section class="accommodations" id="intestazioneACC">
+  <h3 class="section-title">Accommodations in Marseille</h3>
+  <div class="cards">
+
+    <div class="card"><a href="#0"><img src="images/alloggio1.jpg" alt="">
+        <div class="card-accommodations">
+          <h4><b>Auberge la Cannebière</b></h4>
+          <p>Night starting at <b class="price__1">25€</b> <b class="price__2">€25</b> </p>
+        </div>
+      </a>
     </div>
-    <div class="scorrimento flessibile">
-        <div id="alloggio1" class="scheda">
-            <img src="images/alloggio1.jpg">
-            <a href="#" class="caption">B & B Redflag</a>
-            <span class="caption">Una notte a partire da € 80 - $75</span>
+
+    <div class="card"><a href="#0"><img src="images/alloggio2.jpg" alt="">
+        <div class="card-accommodations">
+          <h4><b>Hotel du port</b></h4>
+          <p>Night starting at <b class="price__1">52€</b><b class="price__2">€52</b></p>
         </div>
-        <div id="alloggio2" class="scheda">
-          <img src="images/alloggio2.jpg">
-          <a href="#" class="caption">B & B AlMare</a>
-          <span class="caption">Una notte a partire da € 50 - $45</span>
+      </a>
+    </div>
+    <div class="card"><a href="#0"><img src="images/alloggio3.jpg" alt="">
+        <div class="card-accommodations">
+          <h4><b>Les mouettes Hotel</b></h4>
+          <p>Night starting at <b class="price__1">76€</b><b class="price__2">€76</b></p>
         </div>
-        <div id="alloggio3" class="scheda">
-          <img src="images/alloggio3.jpg">
-          <a href="#" class="caption">B & B Alpe</a>
-          <span class="caption">Una notte a partire da € 40 - $35</span>
-        </div>
-    </div>  
+      </a>
+    </div>
+
   </div>
-<!-- Riga bianca per staccare -->
-<div class="spazio"></div>
-<!-- Inizio Activities -->
-  <div class="sezione">
-    <div>
-      <a href="#" id="intestazioneACT">Activities</a>
-    </div>
-    <div class="scorrimento flessibile">
-        <div id="activities1" class="scheda">
-            <img src="images/activities1.jpg">
-            <a href="#" class="caption">Perugia</a>
-            <span class="caption">Visite guidate al Castello di Perugia</span>
-        </div>
-        <div id="activities2" class="scheda">
-          <img src="images/activities2.jpg">
-          <a href="#" class="caption">Alassio</a>
-          <span class="caption">Visita il Torrione by night</span>
-        </div>
-        <div id="activities3" class="scheda">
-          <img src="images/activities3.jpg">
-          <a href="#" class="caption">Amalfi</a>
-          <span class="caption">In giro per la costiera amalfitana, scopri sapori e gusti!!!</span>
-        </div>
-    </div>  
+  <h4 class="show-more"><b>Show more</b></h4>
+</section>
+
+<laterale>
+  <div class="section-title section-title-laterale">
+    <h3>Most Popular</h3>
+    <i class="fas fa-chart-line"></i>
   </div>
 
-</body>
+  <div class="cards-laterale">
+    <div onclick="location.href='#0';" style="cursor: pointer;" class="card-laterale">
+      <img src="images/alloggio1.jpg" alt="">
+      <div class="laterale-description ">
+        <h4><b>Morning Sun Hotel</b></h4>
+        <p>Night starting at <b class="price__1">128€</b> <b class="price__2">€128</b></p>
+      </div>
+
+    </div>
+ 
+  </div>
+
+</laterale>
+
+<section class="activities" id="intestazioneACT">
+  <h3 class="section-title">Activities in Marseille</h3>
+  <div class="cards-activities">
+    <div class="card-activities item1"><a href="#0"><img src="images/activities1.jpg" alt="">
+        <div class="activities-description">
+          <span class="text-card3"><b>Old Port</b></span>
+
+        </div>
+      </a>
+    </div>
+    <div class="card-3v2 item2"><a href="#0"><img src="images/activities2.jpg" alt="">
+        <div class="activities-description">
+          <span class="text-card3v2"><b>Pomègues Fort</b></span>
+
+        </div>
+      </a>
+    </div>
+    <div class="card-3v2 item3"><a href="#0"><img src="images/activities3.jpg" alt="">
+        <div class="activities-description">
+          <span class="text-card3v2"><b>Frioul Island</b></span>
+
+        </div>
+      </a>
+    </div>
+  </div>
 
 
+</section>
+		<footer>
+			<div class="footer-content">
+				<h3><b>About</b></h3>
+				<p>Site Map</p>
+				<p>General Terms and Conditions</p>
+				<p>Data and Privacy</p>
+			</div>
+			<div class="footer-content">
+				<h3><b>Our Accommodations</b></h3>
+				<p>Quality Assessment</p>
+				<p>You have a hotel?</p>
+			</div>
+			<div class="footer-content">
+				<h3><b>Assistance</b></h3>
+				<p>Hel Desk</p>
+				<p>Contact Us</p>
+			</div>
+		</footer>
+	</div>
 
 
 
