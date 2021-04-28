@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
 }
-.container {
+.corpo {
   font-family: "Raleway", sans-serif;
   display: grid;
   grid-template-columns: 67% 33%;
@@ -47,7 +47,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.accommodations-btn {
+.intestazioneACCMenu {
   color: #1e90ff;
   border-top: #0065fc solid 1px;
 }
@@ -96,21 +96,21 @@ form input:nth-child(3) {
   border: none;
 }
 
-.filter-bar {
+.filter-sezione {
   margin: 30px 0px;
 }
-.filter-bar h3 {
+.filter-sezione h3 {
   margin: auto 0;
   display: inline;
 }
-.btns-filters {
+.filter-sezione-bottone {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 20px;
   margin: 10px 0 0 30px;
 }
 
-.btn-filter {
+.filter-bottoni {
   border: 2px solid #ddd;
   border-radius: 40px;
   outline: none;
@@ -119,11 +119,11 @@ form input:nth-child(3) {
   height: 45px;
   position: relative;
 }
-.btn-filter:hover {
+.filter-bottoni:hover {
   background-color: #1e90ff;
   transform: scale(1.15);
 }
-.filter-bar i {
+.filter-sezione i {
   padding: 16px;
   border-radius: 50%;
   display: inline-block;
@@ -133,7 +133,7 @@ form input:nth-child(3) {
   left: -10px;
   top: -1px;
 }
-.filter-bar span {
+.filter-sezione span {
   padding: 0px 15px 0 51px;
   font-weight: bold;
   font-size: larger;
@@ -163,20 +163,20 @@ form input:nth-child(3) {
   border-radius: 20px;
   grid-area: accommodations;
 }
-.section-title {
+.titolo-sezione {
   margin: 30px 0 20px 30px;
   font-weight: 700;
 }
 .empty{
     color: #ccc;
 }
-.section-title-laterale {
+.titolo-sezione-laterale {
   width: 85%;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
 }
-.section-title i {
+.titolo-sezione i {
   float: right;
   font-size: x-large;
 }
@@ -189,7 +189,7 @@ laterale {
 .price__2{
     display: none;
 }
-.cards-laterale {
+.sezione-laterale {
   margin: 0 30px;
   display: flex;
   flex-wrap: wrap;
@@ -210,7 +210,7 @@ footer {
   margin-top: 40px;
 }
 
-.card {
+.scheda {
   width: 29.9%;
   background-color: white;
   border-radius: 20px;
@@ -218,18 +218,18 @@ footer {
   height: 200px;
   transition: box-shadow 0.5s ease-in-out;
 }
-.card img {
+.scheda img {
   width: 100%;
   height: 60%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding: 3px;
 }
-.card-accommodations {
+.scheda-accommodations {
   padding: 0px 0px 0px 15px;
   line-height: 1.5;
 }
-.laterale-description {
+.laterale-descrizione {
   display: flex;
   flex-direction: column;
   padding: 0px 0px 0px 10px;
@@ -241,17 +241,17 @@ footer {
   flex-direction: row;
   margin-top: 4px;
 }
-.cards {
+.sezione {
   margin: 0 25px 40px 35px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   
 }
-.show-more {
+.altri-elementi {
   margin: 0px 0 40px 30px;
 }
-.card-laterale {
+.scheda-laterale {
   height: 140px;
   background-color: white;
   border-radius: 20px;
@@ -260,101 +260,93 @@ footer {
   border: white solid 3px;
   transition: box-shadow 0.5s ease-in-out;
 }
-.card-laterale:hover {
+.scheda-laterale:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.card-laterale img {
+.scheda-laterale img {
   width: 40%;
   height: 100%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
-.cards-activities {
+.sezione-activities {
   display: grid;
   grid-template-columns: repeat(4, 22%);
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 4%;
   GRID-ROW-GAP: 25PX;
   grid-template-areas:
-    "item1 item2 item4 item5"
-    "item1 item3 item4 item6";
+    "attivita1 attivita2"
+    "attivita1 attivita3";
 }
-.card-activities {
+.scheda-activities {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
   transition: box-shadow 0.5s ease-in-out;
 }
-.card-activities a img {
+.scheda-activities a img {
   width: 100%;
   height: 88%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-.card-3v2 {
+.scheda-ridotta {
   height: 30vh;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
   transition: box-shadow 0.5s ease-in-out;
 }
-.card-3v2 img {
+.scheda-ridotta img {
   width: 100%;
   height: 75%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-.activities-description {
+.activities-descrizione {
   padding: 10px 16px;
 }
-.footer-content {
+.contenuto-footer {
   width: 30%;
   padding: 30px;
   line-height: 2;
   margin: 10px 0 13px 15px;
 }
-.item1 {
-  grid-area: item1;
+.attivita1 {
+  grid-area: attivita1;
 }
-.item2 {
-  grid-area: item2;
+.attivita2 {
+  grid-area: attivita2;
 }
-.item3 {
-  grid-area: item3;
+.attivita3 {
+  grid-area: attivita3;
 }
-.item4 {
-  grid-area: item4;
-}
-.item5 {
-  grid-area: item5;
-}
-.item6 {
-  grid-area: item6;
-}
+
 .checked {
   color: cornflowerblue;
 }
-.section-title-3 {
+.titolo-sezione-3 {
   margin: 15px 0 22px 20px;
   font-weight: 700;
 }
-.card:hover {
+.scheda:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.card-activities:hover {
+.scheda-activities:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.card-3v2:hover {
+.scheda-ridotta:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 767px) {
-  .container {
+  .corpo {
     display: flex;
     flex-direction: column;
   }
@@ -366,11 +358,7 @@ footer {
     padding-bottom: 30px;
   }
 
-  .section-title-3 {
-    font-size: large;
-    margin: 3px 0 6px 0px;
-  }
-  .section-title-laterale{
+  .titolo-sezione-laterale{
     margin-left: 15px;
     width: 92%;
   }
@@ -379,11 +367,11 @@ footer {
     border-radius: 0px;
     margin: 0;
   }
-  .cards-laterale {
+  .sezione-laterale {
     margin: 0px 20px 40px 20px;
     gap: 15px;
   }
-  .card-laterale {
+  .scheda-laterale {
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
     
   }
@@ -400,21 +388,21 @@ footer {
     margin: 0 0 0 20px;
     font-size: 20px;
   }
-  .cards-activities {
+  .sezione-activities {
     display: flex;
     flex-direction: column;
     margin: 20px 20px;
     gap: 25px;
   }
-  .card-activities {
+  .scheda-activities {
     height: 30vh;
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
     margin: 0;
   }
-  .card-activities a img {
+  .scheda-activities a img {
     height: 75%;
   }
-  .card-3v2 {
+  .scheda-ridotta {
     box-shadow:0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
   }
 }
@@ -431,21 +419,21 @@ footer {
       font-size: 20px;
       margin-left: 20px;
   }
-  .cards {
+  .sezione {
     display: flex;
     flex-direction: column;
     margin: 0px 20px;
     GAP: 15px;
   }
-  .card {
+  .scheda {
     width: 100%;
     margin: 0px;
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
   }
-  .section-title {
+  .titolo-sezione {
     font-size: large;
   }
-  .show-more{
+  .altri-elementi{
     margin: 30px 0 0px 20px;
   }
 }
@@ -461,11 +449,8 @@ footer {
   header {
     margin: 30px 15px;
   }
-  .price__1{
+  .prezzo{
       display: none;
-  }
-  .price__2{
-      display: inline;
   }
   .stars{
       margin-top: 5px;
@@ -478,16 +463,16 @@ footer {
     font-weight: 500;
     opacity: 80%;
   }
-  .filter-bar h3{
+  .filter-sezione h3{
       font-size: large;
   }
-  .btns-filters {
+  .filter-sezione-bottone {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-left: 0px;
   }
-  .footer-content {
+  .contenuto-footer {
     width: fit-content;
     padding: 0px 0 0 0px;
     margin: 30px 0 0px 20px;
@@ -505,20 +490,20 @@ footer {
     margin-left: -10px;
   }
 
-  .accommodations-btn,
-  .activities-btn {
+  .intestazioneACCMenu,
+  .intestazioneACTMenu {
     width: 50%;
     margin: 0px;
     text-align: center;
     bottom: 0px;
     position: absolute;
   }
-  .activities-btn {
+  .intestazioneACTMenu {
     border-bottom-color: #ddd;
     border-bottom-style: solid;
     right: 0px;
   }
-  .accommodations-btn {
+  .intestazioneACCMenu {
     border-bottom-color: #0065fc;
     border-bottom-style: solid;
     border-top-style: none;
@@ -551,7 +536,7 @@ footer {
     margin-right: 15px;
     margin-left: 15px;
   }
-  .btns-filters {
+  .filter-sezione-bottone {
     display: flex;
     margin: 10px 0 0 10px;
   }
@@ -567,22 +552,22 @@ footer {
     margin-right: 15px;
     margin-bottom: 25px;
   }
-  .cards-laterale {
+  .sezione-laterale {
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin: 0 10px 15px 10px;
   }
-  .section-title-laterale {
+  .titolo-sezione-laterale {
     width: 95%;
   }
-  .section-title {
+  .titolo-sezione {
     margin: 15px 0px 15px 20px;
   }
-  .laterale-description {
+  .laterale-descrizione {
     font-size: smaller;
   }
-  .card-laterale {
+  .scheda-laterale {
     width: 30%;
     height: 107px;
     margin: 5px 0px 10px 9px;
@@ -593,7 +578,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .container {
+  .corpo {
     display: flex;
     flex-direction: column;
   }
@@ -602,7 +587,7 @@ footer {
     margin-left: 15px;
     margin-right: 15px;
   }
-  .activities-description {
+  .activities-descrizione {
     font-size: 12px;
     padding: 6px 0px 0px 10px;
   }
@@ -610,14 +595,11 @@ footer {
     order: 6;
     margin-top: 25px;
   }
-  .footer-content {
+  .contenuto-footer {
     margin: 14px 25px;
   }
-  .section-title-3 {
-    margin: 15px 0 20px 20px;
-    font-weight: 700;
-  }
-  .description {
+
+  .descrizione {
     height: fit-content;
     line-height: 1.3;
     margin-bottom: 22px;
