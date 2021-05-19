@@ -15,7 +15,7 @@
   grid-template-areas:
     "nav nav"
     "header header"
-    "accommodations laterale"
+    "accommodations aside"
     "activities activities"
     "footer footer";
 }
@@ -180,11 +180,11 @@ form input:nth-child(3) {
   float: right;
   font-size: x-large;
 }
-laterale {
+aside {
   margin-right: 40px;
   background-color: #ececec;
   border-radius: 20px;
-  grid-area: laterale;
+  grid-area: aside;
 }
 .price__2{
     display: none;
@@ -371,7 +371,7 @@ footer {
     margin-left: 15px;
     width: 92%;
   }
-  laterale {
+  aside {
     order: 3;
     border-radius: 0px;
     margin: 0;
@@ -543,7 +543,7 @@ footer {
   header{
       margin: 15px;
   }
-  laterale {
+  aside {
     order: 3;
     margin-left: 15px;
     margin-right: 15px;
