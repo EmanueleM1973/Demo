@@ -278,8 +278,8 @@ footer {
   grid-column-gap: 4%;
   GRID-ROW-GAP: 25PX;
   grid-template-areas:
-    "attivita1 attivita2"
-    "attivita1 attivita3";
+    "attivita1 attivita2 attivita4 attivita5"
+    "attivita1 attivita3 attivita4 attivita6";
 }
 .scheda-activities {
   background-color: white;
@@ -323,6 +323,15 @@ footer {
 }
 .attivita3 {
   grid-area: attivita3;
+}
+.attivita4 {
+  grid-area: attivita4;
+}
+.attivita5 {
+  grid-area: attivita5;
+}
+.attivita6 {
+  grid-area: attivita6;
 }
 
 .checked {
